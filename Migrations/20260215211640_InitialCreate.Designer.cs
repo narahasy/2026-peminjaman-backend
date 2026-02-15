@@ -11,7 +11,7 @@ using _2026_Peminjaman_backend.Data;
 namespace _2026_Peminjaman_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260215201535_InitialCreate")]
+    [Migration("20260215211640_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -50,6 +50,32 @@ namespace _2026_Peminjaman_backend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2026, 2, 16, 4, 16, 40, 490, DateTimeKind.Local).AddTicks(446),
+                            Email = "admin@mail.com",
+                            Name = "Admin",
+                            Status = "active"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2026, 2, 16, 4, 16, 40, 490, DateTimeKind.Local).AddTicks(461),
+                            Email = "budiraharjo@mail.com",
+                            Name = "Budi Raharjo",
+                            Status = "active"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedDate = new DateTime(2026, 2, 16, 4, 16, 40, 490, DateTimeKind.Local).AddTicks(462),
+                            Email = "sitiaminah@mail.com",
+                            Name = "Siti Aminah",
+                            Status = "inactive"
+                        });
                 });
 #pragma warning restore 612, 618
         }
