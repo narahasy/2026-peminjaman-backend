@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using _2026_Peminjaman_backend.Data;
+using _2026_peminjaman_backend.Data;
 
 #nullable disable
 
-namespace _2026_Peminjaman_backend.Migrations
+namespace _2026_peminjaman_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
@@ -17,7 +17,7 @@ namespace _2026_Peminjaman_backend.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
 
-            modelBuilder.Entity("_2026_Peminjaman_backend.Models.Customer", b =>
+            modelBuilder.Entity("_2026_peminjaman_backend.Models.Customer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

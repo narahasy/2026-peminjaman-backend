@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using _2026_Peminjaman_backend.Data;
+using _2026_peminjaman_backend.Data;
 
 #nullable disable
 
-namespace _2026_Peminjaman_backend.Migrations
+namespace _2026_peminjaman_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20260215211640_InitialCreate")]

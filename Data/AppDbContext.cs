@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using _2026_Peminjaman_backend.Models;
+using _2026_peminjaman_backend.Models;
 
-namespace _2026_Peminjaman_backend.Data
+namespace _2026_peminjaman_backend.Data
 {
     public class AppDbContext : DbContext
     {
@@ -12,7 +12,7 @@ namespace _2026_Peminjaman_backend.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            // Data Seeding (Langkah 6)
+            // Data Seeding 
             modelBuilder.Entity<Customer>().HasData(
                 new Customer { Id = 1, Name = "Admin", Email = "admin@mail.com", Status = "active" },
                 new Customer { Id = 2, Name = "Budi Raharjo", Email = "budiraharjo@mail.com", Status = "active" },

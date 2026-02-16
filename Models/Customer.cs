@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace _2026_Peminjaman_backend.Models
+namespace _2026_peminjaman_backend.Models
 {
     public class Customer
     {

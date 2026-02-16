@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using _2026_Peminjaman_backend.Data;
-using _2026_Peminjaman_backend.Models;
+using _2026_peminjaman_backend.Data;
+using _2026_peminjaman_backend.Models;
 
-namespace _2026_Peminjaman_backend.Controllers
+namespace _2026_peminjaman_backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

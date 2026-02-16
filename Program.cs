@@ -1,4 +1,4 @@
-using _2026_Peminjaman_backend.Data;
+using _2026_peminjaman_backend.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

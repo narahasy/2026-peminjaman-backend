@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>_2026_Peminjaman_backend</RootNamespace>
+    <RootNamespace>_2026_peminjaman_backend</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

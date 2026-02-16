@@ -1,6 +1,6 @@
 using _2026_Peminjaman_backend.DTOs;
 
-namespace _2026_Peminjaman_backend.DTOs
+namespace _2026_peminjaman_backend.DTOs
 {
     public class CustomerDto
     {
