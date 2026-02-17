@@ -10,10 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// --- KODE DATABASE MULAI ---
+// Databse.
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-// --- KODE DATABASE SELESAI ---
 
 builder.Services.AddCors(options => {
     options.AddDefaultPolicy(policy => {

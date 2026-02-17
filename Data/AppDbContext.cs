@@ -7,17 +7,6 @@ namespace _2026_peminjaman_backend.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Customer> Customers { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-            // Data Seeding 
-            modelBuilder.Entity<Customer>().HasData(
-                new Customer { Id = 1, Name = "Admin", Email = "admin@mail.com", Status = "active" },
-                new Customer { Id = 2, Name = "Budi Raharjo", Email = "budiraharjo@mail.com", Status = "active" },
-                new Customer { Id = 3, Name = "Siti Aminah", Email = "sitiaminah@mail.com", Status = "inactive" }
-            );
-        }
+        public DbSet<Peminjaman> Peminjaman { get; set; } 
     }
 }
